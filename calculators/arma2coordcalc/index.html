@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<title>Arma2 / coordinate converter</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35303785-1']);
+  _gaq.push(['_setDomainName', 'snuletek.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<p>With this, you can convert the coordinates from your private hived server, into ingame coordinates.</p>
+<p>UPDATE: The calculator now does reverse calculations</p>
+<p>TODO: Make the calculator compatible with other maps (Need some help on this)
+<br />
+What kind of help do I need?
+Well if you are a server owner, of a server with another map, I would like if you could send me the database coords of, say a vehicle, and the coords that that vehicle is actually at in game.
+send these to me through our <a href="http://snuletek.org/site/contact.php">contact form</a>
+<p style="color:#F00;">I have recieved a mail, and discovered a bug in the mailing system.<br /> Therefore i have not gotten the senders mail address.<br />I fixed the mailing system, and would like anyone to resend the mail they send. Sorry :/</p>
+<table>
+	<form>
+    	<tr>
+        	<!--<td><center>Map</center></td>-->
+        	<td><center>Database coordinates</center></td>
+            <td></td>
+            <td></td>
+            <td><center>X map value</center></td>
+            <td><center>Y map Value</center></td>
+            <td><center>Heading (degrees)</center></td>
+
+        </tr>
+		<tr>
+        	<!--<td>
+            	<select id="map">
+                	<option value="1">Chernarus</option>
+                    <option value="2">Lingor (Under construction)</option>
+                    <option value="3">Fallujah (Under construction)</option>
+                    <option value="4">Namalsk (Under construction)</option>
+                    <option value="5">Panthera (Under construction)</option>
+                    <option value="6">Takistan (Under construction)</option>
+            	</select>
+            </td>-->
+			<td><input type="text" id="databaseCoords" value="[xxx,[X,Y,Z]]" onfocus="javascript: waterMark(this,true,'[xxx,[X,Y,Z]]')" onblur="javascript: waterMark(this,false,'[xxx,[X,Y,Z]]')" ></td>
+            <td><input type="button" value="<" onclick="calculateCoords(0)" id="calculate" /></td>
+            <td><input type="button" value=">" onclick="calculateCoords(1)" id="calculate" /></td>
+            <td><input type="text" value="xxx" onfocus="javascript: waterMark(this,true, 'xxx')" onblur="javascript: waterMark(this,false,'xxx')" id="xOutBox" /></td>
+            <td><input type="text" value="yyy" onfocus="javascript: waterMark(this,true, 'yyy')" onblur="javascript: waterMark(this,false,'yyy')" id="yOutBox"/></td>
+            <td><input type="text" value="heading" onfocus="javascript: waterMark(this,true, 'heading')" onblur="javascript: waterMark(this,false,'heading')" id="headOutBox"/></td>
+        </tr>
+        <tr>
+        	<td><input type="reset" value="Clear" id="clear"/></td>
+        </tr>
+	</form>
+</table>
+
+<iframe style="display:none;" width="100%" height="100%" src="" id="mapUrl"></iframe>
+
+</body>
+<script src="js/js.js" type="text/javascript"></script>
+</html>

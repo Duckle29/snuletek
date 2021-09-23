@@ -1,0 +1,26 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+#centerbg 
+{
+	width:600px;
+	margin:0 auto;
+	background-color:#DC7678;
+	border-radius:10px;
+}
+
+#contents 
+{
+	padding:10px;
+}
+
+#inputform td 
+{
+	padding:5px;
+}
+
+.resultbgcolor
+{
+	background-color:#FF3C3C;
+	border-radius:5px;
+}

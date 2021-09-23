@@ -1,0 +1,190 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+/*Pseudo selectors*/
+a:link {
+	color								:	#444;
+}
+/*------------------------------------------------------------------------*/
+
+/*DOM selectors*/
+body {
+	background-image					:	url(../images/Background.jpg);
+	visibility							:	hidden;
+}
+p {
+	margin								:	5px;
+}
+/*------------------------------------------------------------------------*/
+
+/*Class selectors*/
+.errorMsg, #errorMsg {
+	color								:	#F00 !important;
+}
+
+.successText {
+	color								:	#090;
+}
+
+.menuItem {
+	margin							:	5px 0 5px 0;
+	list-style					:	none;
+	text-align					:	center;
+	width								:	70px;
+	padding-top					:	5px;
+	padding-bottom			:	5px;
+	padding-left				:	10px;
+	padding-right				:	10px;
+	display							:	inline-block;
+}
+
+.nCurrent {
+	background-color					:	#303030;
+}
+
+.current {
+	background-color					:	#151515 !important;
+}
+
+.cCurrent {
+	background-color					:	#151515 !important;
+}
+
+.firstMenuItem {
+	border-bottom-left-radius			:	5px;
+	border-top-left-radius				:	5px;
+}
+
+.lastMenuItem {
+	border-bottom-right-radius			:	5px;
+	border-top-right-radius				:	5px;
+}
+
+.inline-block {
+	display								: inline-block;
+	float								: left;
+}
+
+.box {
+	width								: 300px;
+	border-radius						: 10px;
+	color								: #FFF;
+	background-color					: #303030;
+	padding								: 5px;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*ID selectors*/
+#contact tr td input {
+	border-radius						:	3px;
+}
+
+#contact tr textarea {
+	resize								:	none;
+	width								:	850px;
+	height								:	250px;
+	border-radius						:	3px;
+	border-width						:	0;
+}
+
+#topmenu {
+	margin-right						:	1px;
+	background-color					:	#999;
+	border-radius						:	0 0 5px 5px;
+}
+
+#topmenu a:link, #topmenu a:visited, #topmenu a:hover, #topmenu a:active, #centerSubMenu a:link, #centerSubMenu a:visited, #centerSubMenu a:hover, #centerSubMenu a:active{
+	color								:	#FFF;
+	text-decoration						:	none;
+}
+
+#centerSubMenu {
+	width								:	55%;
+	margin								:	0 auto;
+	display								:	none;
+	border-bottom-left-radius			:	15px;
+	border-bottom-right-radius			:	15px;
+	background-color					:	#666;
+}
+
+#dayzSubMenu, #mcSubMenu {
+	padding-top							:	2px;
+	padding-bottom						:	2px;
+}
+
+#centerPage {
+	width								:	1000px;
+	margin								:	0 auto;
+}
+
+#bodydiv {
+	background-color					:	#CCC;
+	border-top-right-radius				:	5px;
+	border-top-left-radius				:	5px;
+	border-bottom-right-radius			:	15px;
+	border-bottom-left-radius			:	15px;
+	margin-top							:	1px;
+}
+
+#content {
+	margin-top							:	2px;
+	margin-right						:	1px;
+	padding								:	24px 10px 30px 10px;
+	color								:	#333;
+}
+
+#mcLoginBox, #mcLoginBox label {
+	width								: 300px;
+	border-radius						: 10px;
+	color								: #FFF;
+	background-color					: #303030;
+	padding								: 5px;
+}
+
+#average {
+	margin-left							:	0;
+	float								:	left;
+}
+
+#gameTracker {
+	margin-right						:	0;
+	float								:	right;
+}
+
+#adminsTable tr th{
+	padding								:	5px;
+	border-collapse						:	collapse;
+	border-right						:	solid;
+	border-right-width					:	1px;
+	border-left							:	solid;
+	border-left-width					:	1px;
+	border-bottom						:	solid;
+	border-bottom-width					:	1px;
+	border-top							:	solid;
+	border-top-width					:	1px;
+}
+
+#adminsTable tr td{
+	padding								:	5px;
+	border-collapse						:	collapse;
+	border-right						:	solid;
+	border-right-width					:	1px;
+	border-left							:	solid;
+	border-left-width					:	1px;
+}
+
+#adminsTable {
+	text-align							:	center;
+	border-bottom						:	solid;
+	border-bottom-width					:	1px;
+}
+
+#gameTracker img{
+	border-bottom-right-radius			:	5px;
+}
+
+#footer {
+	color								:	#444;
+}
+/*------------------------------------------------------------------------*/

@@ -1,0 +1,15 @@
+.heatSinked {
+	display								: none;
+}
+
+.cooling {
+	display:inline;
+	float								: left;
+}
+
+.fetImg {
+	border-radius:15px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}

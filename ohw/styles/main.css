@@ -1,0 +1,159 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+/*Pseudo selectors*/
+a:link {
+	color								:	#444;
+}
+/*------------------------------------------------------------------------*/
+
+/*DOM selectors*/
+body {
+	background-image					:	url(../images/Background.jpg);
+	visibility							:	hidden;
+}
+
+#content img {
+	width								:	200px;
+}
+
+p {
+	margin								:	5px;
+}
+/*------------------------------------------------------------------------*/
+
+/*Class selectors*/
+.errorMsg, #errorMsg {
+	color								:	#F00 !important;
+}
+
+.successText {
+	color								:	#090;
+}
+
+.menuItem {
+	margin								:	5px 0 5px 0;
+	list-style							:	none;
+	text-align							:	center;
+	width								:	60px;
+	padding-top							:	5px;
+	padding-bottom						:	5px;
+	padding-left						:	10px;
+	padding-right						:	10px;
+	display								:	inline-block;
+}
+
+/*.nCurrent {
+	background-color					:	#303030;
+}
+
+.current {
+	background-color					:	#151515 !important;
+}*/
+
+.inline-block {
+	display								: inline-block;
+	float								: left;
+}
+
+.box {
+	width								: 300px;
+	border-radius						: 10px;
+	color								: #FFF;
+	background-color					: #303030;
+	padding								: 5px;
+}
+/*------------------------------------------------------------------------*/
+
+#centerPage {
+	width								:	1000px;
+	margin								:	0 auto;
+}
+
+#bodydiv {
+	background-color					:	#CCC;
+	border-top-right-radius				:	5px;
+	border-top-left-radius				:	5px;
+	border-bottom-right-radius			:	15px;
+	border-bottom-left-radius			:	15px;
+	margin-top							:	1px;
+}
+
+#content {
+	margin-top							:	2px;
+	margin-right						:	1px;
+	padding								:	24px 10px 30px 10px;
+	color								:	#333;
+}
+
+/*----Main menu----*/
+
+body#ohw li#ohwNav,
+body#RoLUSB li#RoLUSBNav,
+body#contact li#contactNav,
+body#gallery li#galleryNav,
+body#o96Keyboard li#o96KeyboardNav
+{
+	background-color					:	#151515 !important;
+}
+
+#mainMenu {
+	background-color					:	#999;
+	padding								:	1px;
+	border-bottom-left-radius			:	10px;
+	border-bottom-right-radius			:	10px;
+	display								:	none;
+	margin-right						:	1px;
+}
+
+#mainMenu ul
+{
+	-moz-padding-start					:	20px;
+	-webkit-padding-start				:	20px;
+	-khtml-padding-start				:	20px;
+	-o-padding-start					:	20px;
+	margin-top							:	5px;
+	margin-bottom						:	5px;
+}
+
+#mainMenu ul li
+{
+	list-style							:	none;
+	background-color					:	#555;
+	display								:	inline-block;
+
+}
+
+#mainMenu ul li a
+{
+	margin								:	10px;
+	line-height							:	35px;
+}
+
+#mainMenu ul li:hover
+{
+	background-color					:	#151515;
+}
+
+#mainMenu ul a:link, #mainMenu ul a:visited, #mainMenu ul a:hover, #mainMenu ul a:active
+{
+	text-decoration						:	none;
+	color								:	#FFF;
+}
+
+#mainMenu ul li:first-child
+{
+	border-bottom-left-radius			:	5px;
+	border-top-left-radius				:	5px;
+}
+
+#mainMenu ul li:last-child
+{
+	border-bottom-right-radius			:	5px;
+	border-top-right-radius				:	5px;
+}
+
+#footer {
+	color								:	#444;
+}
+/*------------------------------------------------------------------------*/
